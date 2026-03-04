@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxVision - Premium Optical Eyewear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo">LuxVision</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#book">Services</a></li>
+            </ul>
+            <a href="#book" class="nav-cta">Book Appointment</a>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>See the World in <span class="accent">Crystal Clarity</span></h1>
+                <p>Experience premium optical eyewear designed for the modern professional. Expertly crafted frames that
+                    blend cutting-edge technology with timeless elegance.</p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn-primary">Explore Collection</a>
+                    <a href="#virtual" class="btn-secondary">Virtual Try-On</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glasses-showcase">
+                    <div class="glasses-icon">👓</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">Why Choose LuxVision</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Expert Eye Care</h3>
+                    <p>Licensed optometrists providing comprehensive eye examinations using state-of-the-art diagnostic
+                        equipment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Handpicked designer frames and precision lenses from world-renowned manufacturers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Service</h3>
+                    <p>Same-day lens fitting available with our advanced in-house laboratory and expert technicians.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="collections">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🕶️</div>
+                    <div class="product-info">
+                        <h3>Classic Aviator</h3>
+                        <p>Timeless design with UV protection and anti-glare coating</p>
+                        <div class="product-price">
+                            <span class="price">$299</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">👓</div>
+                    <div class="product-info">
+                        <h3>Modern Executive</h3>
+                        <p>Lightweight titanium frames with blue light filtering</p>
+                        <div class="product-price">
+                            <span class="price">$349</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🥽</div>
+                    <div class="product-info">
+                        <h3>Sport Performance</h3>
+                        <p>Durable design with impact-resistant polycarbonate lenses</p>
+                        <div class="product-price">
+                            <span class="price">$279</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"LuxVision transformed my daily experience. The clarity and comfort of my
+                    new glasses are exceptional. The staff took time to understand my needs and recommended the perfect
+                    frames for my face shape and lifestyle."</p>
+                <p class="testimonial-author">— Sarah Mitchell, Marketing Director</p>
+            </div>
+        </section>
+
+        <section id="book" class="appointment">
+            <div class="appointment-container">
+                <h2>Book Your Appointment</h2>
+                <p class="appointment-subtitle">Schedule a comprehensive eye exam or consultation with our expert
+                    optometrists</p>
+
+                <form id="appointmentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Service</label>
+                        <div class="service-options">
+                            <div class="service-option" onclick="selectService(this, 'eye-exam')">
+                                <input type="radio" name="service" value="eye-exam" id="eye-exam" required>
+                                <div class="service-icon">👁️</div>
+                                <label for="eye-exam">Eye Examination</label>
+                                <p>Comprehensive vision test</p>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'contact-lens')">
+                                <input type="radio" name="service" value="contact-lens" id="contact-lens">
+                                <div class="service-icon">🔍</div>
+                                <label for="contact-lens">Contact Lens Fitting</label>
+                                <p>Professional fitting service</p>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'frame-consultation')">
+                                <input type="radio" name="service" value="frame-consultation" id="frame-consultation">
+                                <div class="service-icon">👓</div>
+                                <label for="frame-consultation">Frame Consultation</label>
+                                <p>Personalized style advice</p>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'follow-up')">
+                                <input type="radio" name="service" value="follow-up" id="follow-up">
+                                <div class="service-icon">📋</div>
+                                <label for="follow-up">Follow-up Visit</label>
+                                <p>Post-purchase care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Notes (Optional)</label>
+                        <textarea id="notes" name="notes" placeholder="Any specific concerns or requests..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Confirm Appointment</button>
+                </form>
+
+                <div class="confirmation-message" id="confirmationMessage">
+                    <div class="confirmation-icon">✅</div>
+                    <h3>Appointment Confirmed!</h3>
+                    <p>Thank you for booking with LuxVision. We've sent a confirmation email to your address. Our team
+                        will contact you shortly to confirm your appointment details.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container" >
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About LuxVision</h4>
+                    <ul>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#team">Meet the Team</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#exam">Eye Examinations</a></li>
+                        <li><a href="#fitting">Contact Lens Fitting</a></li>
+                        <li><a href="#repair">Repairs & Adjustments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#eyeglasses">Eyeglasses</a></li>
+                        <li><a href="#sunglasses">Sunglasses</a></li>
+                        <li><a href="#contacts">Contact Lenses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#insurance">Insurance</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxVision Optical. Premium Eyewear for Discerning Individuals.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
